@@ -1,0 +1,122 @@
+$orange: hsl(30, 100%, 47%);
+$gray: hsl(0, 0%, 41%);
+$black: hsl(0, 0%, 8%);
+
+:root {
+    --orange: #{$orange};
+    --gray: #{$gray};
+    --black: #{$black};
+}
+
+* {
+    font-family: 'Poppins', sans-serif;
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    li {
+        list-style: none;
+    }
+}
+
+body {
+    color: white;
+    background: linear-gradient(rgb(35, 35, 35), rgb(17, 17, 17));
+    height: 100vh;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: row-reverse;
+
+    svg {
+       stroke: $orange;
+       cursor: pointer;
+       margin: 0.5em;
+       
+       &:hover {
+        stroke: rgb(237, 237, 237);
+        transition: ease-in-out 0.1s;
+       }
+    }
+}
+
+
+nav {
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100%;
+    background-color: rgb(34, 34, 34);
+    width: 50%;
+    transform: translate(100%);
+    transition: 250ms;
+    
+    .exit {
+        position: absolute;
+        right: 0;
+        margin: 1em;
+    }
+
+    ul {
+        margin-top: 6em;
+        padding: 0;
+    }
+
+    li {
+        padding: .75em 0;
+        width: 100%;
+        padding-left: 2em;
+        cursor: pointer;
+
+        &:hover {
+            background-color: rgb(117, 117, 117);
+            
+            a {
+                color: white;
+            }
+
+            transition: 250ms;
+        }
+    }
+    
+    a {
+        color: rgb(168, 168, 168);
+    }
+}
+
+.nav_Open {
+    transform: translate(0);
+    transition: 250ms;
+}
+
+.hero {
+    // border: 2px solid white;
+    padding: 0 1.5em;
+    line-height: 1.5;
+    margin-top: 2.5em;
+
+    p {
+        padding: 0;
+        margin: 0;
+        font-size: 3ren;
+    }
+
+    .intro {
+        margin: 0.5em 0;
+    }
+
+    .name {
+        margin: 0;
+        padding: 0;
+        font-size: 2.7rem;
+        color: $orange;
+    }
+
+    .about {
+        margin-top: 0.5em;
+    }
+}

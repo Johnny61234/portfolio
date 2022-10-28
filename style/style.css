@@ -1,0 +1,101 @@
+:root {
+  --orange: hsl(30deg, 100%, 47%);
+  --gray: hsl(0deg, 0%, 41%);
+  --black: hsl(0deg, 0%, 8%);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+* a {
+  color: black;
+  text-decoration: none;
+}
+* li {
+  list-style: none;
+}
+
+body {
+  color: white;
+  background: linear-gradient(rgb(35, 35, 35), rgb(17, 17, 17));
+  height: 100vh;
+  margin: 0;
+}
+
+header {
+  display: flex;
+  flex-direction: row-reverse;
+}
+header svg {
+  stroke: hsl(30deg, 100%, 47%);
+  cursor: pointer;
+  margin: 0.5em;
+}
+header svg:hover {
+  stroke: rgb(237, 237, 237);
+  transition: ease-in-out 0.1s;
+}
+
+nav {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100%;
+  background-color: rgb(34, 34, 34);
+  width: 50%;
+  transform: translate(100%);
+  transition: 250ms;
+}
+nav .exit {
+  position: absolute;
+  right: 0;
+  margin: 1em;
+}
+nav ul {
+  margin-top: 6em;
+  padding: 0;
+}
+nav li {
+  padding: 0.75em 0;
+  width: 100%;
+  padding-left: 2em;
+  cursor: pointer;
+}
+nav li:hover {
+  background-color: rgb(117, 117, 117);
+  transition: 250ms;
+}
+nav li:hover a {
+  color: white;
+}
+nav a {
+  color: rgb(168, 168, 168);
+}
+
+.nav_Open {
+  transform: translate(0);
+  transition: 250ms;
+}
+
+.hero {
+  padding: 0 1.5em;
+  line-height: 1.5;
+  margin-top: 2.5em;
+}
+.hero p {
+  padding: 0;
+  margin: 0;
+  font-size: 3ren;
+}
+.hero .intro {
+  margin: 0.5em 0;
+}
+.hero .name {
+  margin: 0;
+  padding: 0;
+  font-size: 2.7rem;
+  color: hsl(30deg, 100%, 47%);
+}
+.hero .about {
+  margin-top: 0.5em;
+}/*# sourceMappingURL=style.css.map */
